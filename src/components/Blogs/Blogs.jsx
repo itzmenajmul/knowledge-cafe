@@ -19,7 +19,7 @@ const Blogs = ({ handleAddToBookMark, handleMarkAsRead }) => {
           handleAddToBookMark={handleAddToBookMark}
           key={blog.id}
           blog={blog}
-          handleMarkAsRead = {handleMarkAsRead}
+          handleMarkAsRead={handleMarkAsRead}
         />
       ))}
     </div>
@@ -27,9 +27,8 @@ const Blogs = ({ handleAddToBookMark, handleMarkAsRead }) => {
 };
 
 Blogs.propTypes = {
-    handleAddToBookMark: PropTypes.func.isRequired,
-    handleMarkAsRead: PropTypes.func.isRequired,
-    
-  };
+  handleAddToBookMark: PropTypes.func.isRequired,
+  handleMarkAsRead: PropTypes.func.isRequired,
+};
 
 export default Blogs;
